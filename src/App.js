@@ -1,7 +1,8 @@
 import './App.css'
-import './GetData'
 import Navi from './Navi'
+import MainSection from './MainSection'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Category from './List'
 
 const Home = () => <div>Home</div>
 const About = () => <div>About</div>
@@ -11,7 +12,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Category></Category>
         <Navi></Navi>
+        <MainSection></MainSection>
         <main>
           <Router>
             <Routes>
