@@ -1,9 +1,11 @@
 import React from 'react'
+import Images from './Images'
 import { BrowserRouter as Router, Link } from 'react-router-dom'
 
 function Navi() {
   return (
     <div className="navi-box">
+      <Images></Images>
       <nav>
         <Router>
           <ul className="navi-items">
